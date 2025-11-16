@@ -79,7 +79,7 @@ pipeline {
                                 docker stop simple-web-app || true
                                 docker rm simple-web-app || true
                                 docker pull ${buildTag}
-                                docker run -d --name simple-web-app -p 3000:3000 ${buildTag}
+                                docker run -d --name simple-web-app -p 5000:5000 ${buildTag}
 EOF
                             """
                         }
